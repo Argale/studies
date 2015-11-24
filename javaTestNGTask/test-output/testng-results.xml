@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="30" started-at="2015-11-24T09:48:49Z" finished-at="2015-11-24T09:48:49Z">
+    <groups>
+      <group name="init">
+        <method signature="Task.testInit(double, double)[pri:1, instance:tests.Task@25618e91]" name="testInit" class="tests.Task"/>
+      </group> <!-- init -->
+      <group name="rectangle">
+        <method signature="Task.isSquareNegatitve()[pri:3, instance:tests.Task@25618e91]" name="isSquareNegatitve" class="tests.Task"/>
+        <method signature="Task.isSquarePosititve(double, double)[pri:1, instance:tests.Task@25618e91]" name="isSquarePosititve" class="tests.Task"/>
+        <method signature="Task.recFerence(double, double)[pri:2, instance:tests.Task@25618e91]" name="recFerence" class="tests.Task"/>
+        <method signature="Task.recSquare(double, double)[pri:2, instance:tests.Task@25618e91]" name="recSquare" class="tests.Task"/>
+      </group> <!-- rectangle -->
+      <group name="circle">
+        <method signature="Task.circleFerence(double)[pri:0, instance:tests.Task@25618e91]" name="circleFerence" class="tests.Task"/>
+        <method signature="Task.circleSquare(double)[pri:0, instance:tests.Task@25618e91]" name="circleSquare" class="tests.Task"/>
+      </group> <!-- circle -->
+      <group name="quadrate">
+        <method signature="Task.quadFerence(double)[pri:0, instance:tests.Task@25618e91]" name="quadFerence" class="tests.Task"/>
+        <method signature="Task.quadSquare(double)[pri:0, instance:tests.Task@25618e91]" name="quadSquare" class="tests.Task"/>
+      </group> <!-- quadrate -->
+    </groups>
+    <test name="simpletest" duration-ms="30" started-at="2015-11-24T09:48:49Z" finished-at="2015-11-24T09:48:49Z">
+      <class name="tests.Task">
+        <test-method status="PASS" signature="isSquarePosititve(double, double)[pri:1, instance:tests.Task@25618e91]" name="isSquarePosititve" duration-ms="8" started-at="2015-11-24T12:48:49Z" finished-at="2015-11-24T12:48:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSquarePosititve -->
+        <test-method status="PASS" signature="testInit(double, double)[pri:1, instance:tests.Task@25618e91]" name="testInit" duration-ms="1" started-at="2015-11-24T12:48:49Z" data-provider="twoSideProvider" finished-at="2015-11-24T12:48:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInit -->
+        <test-method status="PASS" signature="isSquareNegatitve()[pri:3, instance:tests.Task@25618e91]" name="isSquareNegatitve" duration-ms="1" started-at="2015-11-24T12:48:49Z" finished-at="2015-11-24T12:48:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSquareNegatitve -->
+        <test-method status="PASS" signature="circleFerence(double)[pri:0, instance:tests.Task@25618e91]" name="circleFerence" duration-ms="3" depends-on-groups="init" started-at="2015-11-24T12:48:49Z" data-provider="oneSideProvider" finished-at="2015-11-24T12:48:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- circleFerence -->
+        <test-method status="PASS" signature="circleSquare(double)[pri:0, instance:tests.Task@25618e91]" name="circleSquare" duration-ms="1" depends-on-groups="init" started-at="2015-11-24T12:48:49Z" data-provider="oneSideProvider" finished-at="2015-11-24T12:48:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- circleSquare -->
+        <test-method status="PASS" signature="quadFerence(double)[pri:0, instance:tests.Task@25618e91]" name="quadFerence" duration-ms="1" depends-on-groups="init" started-at="2015-11-24T12:48:49Z" data-provider="oneSideProvider" finished-at="2015-11-24T12:48:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quadFerence -->
+        <test-method status="PASS" signature="quadSquare(double)[pri:0, instance:tests.Task@25618e91]" name="quadSquare" duration-ms="0" depends-on-groups="init" started-at="2015-11-24T12:48:49Z" data-provider="oneSideProvider" finished-at="2015-11-24T12:48:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quadSquare -->
+        <test-method status="PASS" signature="recFerence(double, double)[pri:2, instance:tests.Task@25618e91]" name="recFerence" duration-ms="0" depends-on-groups="init" started-at="2015-11-24T12:48:49Z" data-provider="twoSideProvider" finished-at="2015-11-24T12:48:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recFerence -->
+        <test-method status="PASS" signature="recSquare(double, double)[pri:2, instance:tests.Task@25618e91]" name="recSquare" duration-ms="1" depends-on-groups="init" started-at="2015-11-24T12:48:49Z" data-provider="twoSideProvider" finished-at="2015-11-24T12:48:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recSquare -->
+      </class> <!-- tests.Task -->
+    </test> <!-- simpletest -->
+  </suite> <!-- Suite -->
+</testng-results>

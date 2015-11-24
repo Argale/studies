@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="sideone" value="5"/>
+  <parameter name="sidetwo" value="5"/>
+  <test name="simpletest(failed)">
+    <parameter name="sideone" value="5"/>
+    <parameter name="sidetwo" value="5"/>
+    <classes>
+      <class name="tests.task">
+        <methods>
+          <include name="isSquareNegatitve"/>
+          <include name="recSquare" invocation-numbers="0"/>
+          <include name="testInit"/>
+          <include name="recFerence" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.task -->
+    </classes>
+  </test> <!-- simpletest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
