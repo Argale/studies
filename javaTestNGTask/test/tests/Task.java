@@ -1,13 +1,14 @@
 package tests;
 
 import org.testng.annotations.Test;
+
+import epam.saratov.homeWork.testng.objects.*;
+import epam.saratov.homeWork.testng.objects.GeometricObjects.*;
+
 import java.math.BigDecimal;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
-
-import epam.saratov.homeWork.testng.objects.GeometricObjects;
-import epam.saratov.homeWork.testng.objects.GeometricObjects.*;
 
 public class Task {
 	@DataProvider(name = "twoSideProvider")

@@ -8,6 +8,8 @@
 			<attribute name="javadoc_location" value="jar:file:/D:/java/works/javaTestNGTask/ref%20lib/Unit%20Frameworks.%20TestNG_GeomObjects.jar!/doc"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="src/main/resources/Unit Frameworks. TestNG_GeomObjects.jar"/>
+	<classpathentry kind="lib" path="test/tests/GeometricObjects.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
