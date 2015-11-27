@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="10" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="28" started-at="2015-11-27T12:55:38Z" finished-at="2015-11-27T12:55:38Z">
+    <groups>
+      <group name="init">
+        <method signature="TestTask.testInit(double, double)[pri:1, instance:tests.TestTask@3d8c7aca]" name="testInit" class="tests.TestTask"/>
+      </group> <!-- init -->
+      <group name="rectangle">
+        <method signature="TestTask.isSquareNegatitve()[pri:3, instance:tests.TestTask@3d8c7aca]" name="isSquareNegatitve" class="tests.TestTask"/>
+        <method signature="TestTask.isSquarePosititve(double, double)[pri:1, instance:tests.TestTask@3d8c7aca]" name="isSquarePosititve" class="tests.TestTask"/>
+        <method signature="TestTask.recFerence(double, double)[pri:2, instance:tests.TestTask@3d8c7aca]" name="recFerence" class="tests.TestTask"/>
+        <method signature="TestTask.recSquare(double, double)[pri:2, instance:tests.TestTask@3d8c7aca]" name="recSquare" class="tests.TestTask"/>
+      </group> <!-- rectangle -->
+      <group name="circle">
+        <method signature="TestTask.circleFerence(double)[pri:0, instance:tests.TestTask@3d8c7aca]" name="circleFerence" class="tests.TestTask"/>
+        <method signature="TestTask.circleSquare(double)[pri:0, instance:tests.TestTask@3d8c7aca]" name="circleSquare" class="tests.TestTask"/>
+      </group> <!-- circle -->
+      <group name="quadrate">
+        <method signature="TestTask.quadFerence(double)[pri:0, instance:tests.TestTask@3d8c7aca]" name="quadFerence" class="tests.TestTask"/>
+        <method signature="TestTask.quadSquare(double)[pri:0, instance:tests.TestTask@3d8c7aca]" name="quadSquare" class="tests.TestTask"/>
+      </group> <!-- quadrate -->
+    </groups>
+    <test name="Command line test" duration-ms="28" started-at="2015-11-27T12:55:38Z" finished-at="2015-11-27T12:55:38Z">
+      <class name="tests.TestTaskFactory$isQuadTests">
+        <test-method status="PASS" signature="isQuadPositive()[pri:0, instance:tests.TestTaskFactory$isQuadTests@6aaa5eb0]" name="isQuadPositive" duration-ms="6" started-at="2015-11-27T15:55:38Z" finished-at="2015-11-27T15:55:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isQuadPositive -->
+      </class> <!-- tests.TestTaskFactory$isQuadTests -->
+      <class name="tests.TestTask">
+        <test-method status="SKIP" signature="isSquarePosititve(double, double)[pri:1, instance:tests.TestTask@3d8c7aca]" name="isSquarePosititve" duration-ms="0" started-at="2015-11-27T15:55:38Z" finished-at="2015-11-27T15:55:38Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'sideone' is required by @Test on method isSquarePosititve but has not been marked @Optional or defined
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'sideone' is required by @Test on method isSquarePosititve but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSquarePosititve -->
+        <test-method status="PASS" signature="testInit(double, double)[pri:1, instance:tests.TestTask@3d8c7aca]" name="testInit" duration-ms="5" started-at="2015-11-27T15:55:38Z" data-provider="twoSideProvider" finished-at="2015-11-27T15:55:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInit -->
+        <test-method status="PASS" signature="isSquareNegatitve()[pri:3, instance:tests.TestTask@3d8c7aca]" name="isSquareNegatitve" duration-ms="0" started-at="2015-11-27T15:55:38Z" finished-at="2015-11-27T15:55:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSquareNegatitve -->
+        <test-method status="PASS" signature="circleFerence(double)[pri:0, instance:tests.TestTask@3d8c7aca]" name="circleFerence" duration-ms="3" depends-on-groups="init" started-at="2015-11-27T15:55:38Z" data-provider="oneSideProvider" finished-at="2015-11-27T15:55:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- circleFerence -->
+        <test-method status="PASS" signature="circleSquare(double)[pri:0, instance:tests.TestTask@3d8c7aca]" name="circleSquare" duration-ms="0" depends-on-groups="init" started-at="2015-11-27T15:55:38Z" data-provider="oneSideProvider" finished-at="2015-11-27T15:55:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- circleSquare -->
+        <test-method status="PASS" signature="quadSquare(double)[pri:0, instance:tests.TestTask@3d8c7aca]" name="quadSquare" duration-ms="0" depends-on-groups="init" started-at="2015-11-27T15:55:38Z" data-provider="oneSideProvider" finished-at="2015-11-27T15:55:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quadSquare -->
+        <test-method status="PASS" signature="quadFerence(double)[pri:0, instance:tests.TestTask@3d8c7aca]" name="quadFerence" duration-ms="0" depends-on-groups="init" started-at="2015-11-27T15:55:38Z" data-provider="oneSideProvider" finished-at="2015-11-27T15:55:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quadFerence -->
+        <test-method status="PASS" signature="recSquare(double, double)[pri:2, instance:tests.TestTask@3d8c7aca]" name="recSquare" duration-ms="0" depends-on-groups="init" started-at="2015-11-27T15:55:38Z" data-provider="twoSideProvider" finished-at="2015-11-27T15:55:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recSquare -->
+        <test-method status="PASS" signature="recFerence(double, double)[pri:2, instance:tests.TestTask@3d8c7aca]" name="recFerence" duration-ms="0" depends-on-groups="init" started-at="2015-11-27T15:55:38Z" data-provider="twoSideProvider" finished-at="2015-11-27T15:55:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recFerence -->
+      </class> <!-- tests.TestTask -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
