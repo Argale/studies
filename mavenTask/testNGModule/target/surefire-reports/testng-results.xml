@@ -2,7 +2,7 @@
 <testng-results skipped="1" failed="0" total="10" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="28" started-at="2015-11-27T12:55:38Z" finished-at="2015-11-27T12:55:38Z">
+  <suite name="Command line suite" duration-ms="22" started-at="2015-12-01T12:51:07Z" finished-at="2015-12-01T12:51:07Z">
     <groups>
       <group name="init">
         <method signature="TestTask.testInit(double, double)[pri:1, instance:tests.TestTask@3d8c7aca]" name="testInit" class="tests.TestTask"/>
@@ -22,15 +22,15 @@
         <method signature="TestTask.quadSquare(double)[pri:0, instance:tests.TestTask@3d8c7aca]" name="quadSquare" class="tests.TestTask"/>
       </group> <!-- quadrate -->
     </groups>
-    <test name="Command line test" duration-ms="28" started-at="2015-11-27T12:55:38Z" finished-at="2015-11-27T12:55:38Z">
+    <test name="Command line test" duration-ms="22" started-at="2015-12-01T12:51:07Z" finished-at="2015-12-01T12:51:07Z">
       <class name="tests.TestTaskFactory$isQuadTests">
-        <test-method status="PASS" signature="isQuadPositive()[pri:0, instance:tests.TestTaskFactory$isQuadTests@6aaa5eb0]" name="isQuadPositive" duration-ms="6" started-at="2015-11-27T15:55:38Z" finished-at="2015-11-27T15:55:38Z">
+        <test-method status="PASS" signature="isQuadPositive()[pri:0, instance:tests.TestTaskFactory$isQuadTests@6aaa5eb0]" name="isQuadPositive" duration-ms="7" started-at="2015-12-01T15:51:07Z" finished-at="2015-12-01T15:51:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isQuadPositive -->
       </class> <!-- tests.TestTaskFactory$isQuadTests -->
       <class name="tests.TestTask">
-        <test-method status="SKIP" signature="isSquarePosititve(double, double)[pri:1, instance:tests.TestTask@3d8c7aca]" name="isSquarePosititve" duration-ms="0" started-at="2015-11-27T15:55:38Z" finished-at="2015-11-27T15:55:38Z">
+        <test-method status="SKIP" signature="isSquarePosititve(double, double)[pri:1, instance:tests.TestTask@3d8c7aca]" name="isSquarePosititve" duration-ms="0" started-at="2015-12-01T15:51:07Z" finished-at="2015-12-01T15:51:07Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -79,7 +79,7 @@ Parameter 'sideone' is required by @Test on method isSquarePosititve but has not
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isSquarePosititve -->
-        <test-method status="PASS" signature="testInit(double, double)[pri:1, instance:tests.TestTask@3d8c7aca]" name="testInit" duration-ms="5" started-at="2015-11-27T15:55:38Z" data-provider="twoSideProvider" finished-at="2015-11-27T15:55:38Z">
+        <test-method status="PASS" signature="testInit(double, double)[pri:1, instance:tests.TestTask@3d8c7aca]" name="testInit" duration-ms="0" started-at="2015-12-01T15:51:07Z" data-provider="twoSideProvider" finished-at="2015-12-01T15:51:07Z">
           <params>
             <param index="0">
               <value>
@@ -95,11 +95,11 @@ Parameter 'sideone' is required by @Test on method isSquarePosititve but has not
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInit -->
-        <test-method status="PASS" signature="isSquareNegatitve()[pri:3, instance:tests.TestTask@3d8c7aca]" name="isSquareNegatitve" duration-ms="0" started-at="2015-11-27T15:55:38Z" finished-at="2015-11-27T15:55:38Z">
+        <test-method status="PASS" signature="isSquareNegatitve()[pri:3, instance:tests.TestTask@3d8c7aca]" name="isSquareNegatitve" duration-ms="0" started-at="2015-12-01T15:51:07Z" finished-at="2015-12-01T15:51:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isSquareNegatitve -->
-        <test-method status="PASS" signature="circleFerence(double)[pri:0, instance:tests.TestTask@3d8c7aca]" name="circleFerence" duration-ms="3" depends-on-groups="init" started-at="2015-11-27T15:55:38Z" data-provider="oneSideProvider" finished-at="2015-11-27T15:55:38Z">
+        <test-method status="PASS" signature="circleFerence(double)[pri:0, instance:tests.TestTask@3d8c7aca]" name="circleFerence" duration-ms="3" depends-on-groups="init" started-at="2015-12-01T15:51:07Z" data-provider="oneSideProvider" finished-at="2015-12-01T15:51:07Z">
           <params>
             <param index="0">
               <value>
@@ -110,7 +110,7 @@ Parameter 'sideone' is required by @Test on method isSquarePosititve but has not
           <reporter-output>
           </reporter-output>
         </test-method> <!-- circleFerence -->
-        <test-method status="PASS" signature="circleSquare(double)[pri:0, instance:tests.TestTask@3d8c7aca]" name="circleSquare" duration-ms="0" depends-on-groups="init" started-at="2015-11-27T15:55:38Z" data-provider="oneSideProvider" finished-at="2015-11-27T15:55:38Z">
+        <test-method status="PASS" signature="circleSquare(double)[pri:0, instance:tests.TestTask@3d8c7aca]" name="circleSquare" duration-ms="0" depends-on-groups="init" started-at="2015-12-01T15:51:07Z" data-provider="oneSideProvider" finished-at="2015-12-01T15:51:07Z">
           <params>
             <param index="0">
               <value>
@@ -121,7 +121,7 @@ Parameter 'sideone' is required by @Test on method isSquarePosititve but has not
           <reporter-output>
           </reporter-output>
         </test-method> <!-- circleSquare -->
-        <test-method status="PASS" signature="quadSquare(double)[pri:0, instance:tests.TestTask@3d8c7aca]" name="quadSquare" duration-ms="0" depends-on-groups="init" started-at="2015-11-27T15:55:38Z" data-provider="oneSideProvider" finished-at="2015-11-27T15:55:38Z">
+        <test-method status="PASS" signature="quadSquare(double)[pri:0, instance:tests.TestTask@3d8c7aca]" name="quadSquare" duration-ms="0" depends-on-groups="init" started-at="2015-12-01T15:51:07Z" data-provider="oneSideProvider" finished-at="2015-12-01T15:51:07Z">
           <params>
             <param index="0">
               <value>
@@ -132,7 +132,7 @@ Parameter 'sideone' is required by @Test on method isSquarePosititve but has not
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quadSquare -->
-        <test-method status="PASS" signature="quadFerence(double)[pri:0, instance:tests.TestTask@3d8c7aca]" name="quadFerence" duration-ms="0" depends-on-groups="init" started-at="2015-11-27T15:55:38Z" data-provider="oneSideProvider" finished-at="2015-11-27T15:55:38Z">
+        <test-method status="PASS" signature="quadFerence(double)[pri:0, instance:tests.TestTask@3d8c7aca]" name="quadFerence" duration-ms="0" depends-on-groups="init" started-at="2015-12-01T15:51:07Z" data-provider="oneSideProvider" finished-at="2015-12-01T15:51:07Z">
           <params>
             <param index="0">
               <value>
@@ -143,7 +143,7 @@ Parameter 'sideone' is required by @Test on method isSquarePosititve but has not
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quadFerence -->
-        <test-method status="PASS" signature="recSquare(double, double)[pri:2, instance:tests.TestTask@3d8c7aca]" name="recSquare" duration-ms="0" depends-on-groups="init" started-at="2015-11-27T15:55:38Z" data-provider="twoSideProvider" finished-at="2015-11-27T15:55:38Z">
+        <test-method status="PASS" signature="recSquare(double, double)[pri:2, instance:tests.TestTask@3d8c7aca]" name="recSquare" duration-ms="0" depends-on-groups="init" started-at="2015-12-01T15:51:07Z" data-provider="twoSideProvider" finished-at="2015-12-01T15:51:07Z">
           <params>
             <param index="0">
               <value>
@@ -159,7 +159,7 @@ Parameter 'sideone' is required by @Test on method isSquarePosititve but has not
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recSquare -->
-        <test-method status="PASS" signature="recFerence(double, double)[pri:2, instance:tests.TestTask@3d8c7aca]" name="recFerence" duration-ms="0" depends-on-groups="init" started-at="2015-11-27T15:55:38Z" data-provider="twoSideProvider" finished-at="2015-11-27T15:55:38Z">
+        <test-method status="PASS" signature="recFerence(double, double)[pri:2, instance:tests.TestTask@3d8c7aca]" name="recFerence" duration-ms="0" depends-on-groups="init" started-at="2015-12-01T15:51:07Z" data-provider="twoSideProvider" finished-at="2015-12-01T15:51:07Z">
           <params>
             <param index="0">
               <value>

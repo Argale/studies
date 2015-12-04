@@ -48,7 +48,7 @@
 							<version>2.12.4</version>
 							<configuration>
 								<includes>
-									<include>**/src/test/java/tests/TestTaskFactory.java</include>
+									<include>**/tests/TestTaskFactory.java</include>
 								</includes>
 							</configuration>
 						</plugin>
