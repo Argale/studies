@@ -1,65 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13654" started-at="2015-12-04T09:42:46Z" finished-at="2015-12-04T09:42:59Z">
+  <suite name="Default suite" duration-ms="12378" started-at="2015-12-10T07:46:18Z" finished-at="2015-12-10T07:46:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13654" started-at="2015-12-04T09:42:46Z" finished-at="2015-12-04T09:42:59Z">
-      <class name="com.epam.seleniumTask.tests.mailTest">
-        <test-method status="PASS" signature="runBrovser()[pri:0, instance:com.epam.seleniumTask.tests.mailTest@48140564]" name="runBrovser" is-config="true" duration-ms="2481" started-at="2015-12-04T12:42:46Z" finished-at="2015-12-04T12:42:48Z">
+    <test name="Default test" duration-ms="12378" started-at="2015-12-10T07:46:18Z" finished-at="2015-12-10T07:46:31Z">
+      <class name="com.epam.seleniumTask.tests.MailTest">
+        <test-method status="PASS" signature="runBrovser()[pri:0, instance:com.epam.seleniumTask.tests.MailTest@48140564]" name="runBrovser" is-config="true" duration-ms="2958" started-at="2015-12-10T10:46:18Z" finished-at="2015-12-10T10:46:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runBrovser -->
-        <test-method status="PASS" signature="login(com.epam.seleniumTask.tests.DataLoader)[pri:0, instance:com.epam.seleniumTask.tests.mailTest@48140564]" name="login" duration-ms="7524" started-at="2015-12-04T12:42:48Z" data-provider="firstSet" finished-at="2015-12-04T12:42:56Z">
+        <test-method status="PASS" signature="login(com.epam.seleniumTask.tests.DataLoader)[pri:0, instance:com.epam.seleniumTask.tests.MailTest@48140564]" name="login" duration-ms="4139" started-at="2015-12-10T10:46:21Z" data-provider="firstSet" finished-at="2015-12-10T10:46:25Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.epam.seleniumTask.tests.DataLoader@1807f5a7]]>
+                <![CDATA[com.epam.seleniumTask.tests.DataLoader@1a5a4e19]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="checkDrafts(com.epam.seleniumTask.tests.DataLoader)[pri:0, instance:com.epam.seleniumTask.tests.mailTest@48140564]" name="checkDrafts" duration-ms="837" started-at="2015-12-04T12:42:56Z" data-provider="firstSet" depends-on-methods="com.epam.seleniumTask.tests.mailTest.login" finished-at="2015-12-04T12:42:56Z">
+        <test-method status="PASS" signature="checkDrafts(com.epam.seleniumTask.tests.DataLoader)[pri:0, instance:com.epam.seleniumTask.tests.MailTest@48140564]" name="checkDrafts" duration-ms="987" started-at="2015-12-10T10:46:25Z" data-provider="firstSet" depends-on-methods="com.epam.seleniumTask.tests.MailTest.login" finished-at="2015-12-10T10:46:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.epam.seleniumTask.tests.DataLoader@21be3395]]>
+                <![CDATA[com.epam.seleniumTask.tests.DataLoader@3576ddc2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkDrafts -->
-        <test-method status="PASS" signature="writeMail(com.epam.seleniumTask.tests.DataLoader)[pri:0, instance:com.epam.seleniumTask.tests.mailTest@48140564]" name="writeMail" duration-ms="1848" started-at="2015-12-04T12:42:56Z" data-provider="firstSet" depends-on-methods="com.epam.seleniumTask.tests.mailTest.checkDrafts" finished-at="2015-12-04T12:42:58Z">
+        <test-method status="PASS" signature="writeMail(com.epam.seleniumTask.tests.DataLoader)[pri:0, instance:com.epam.seleniumTask.tests.MailTest@48140564]" name="writeMail" duration-ms="2228" started-at="2015-12-10T10:46:26Z" data-provider="firstSet" depends-on-methods="com.epam.seleniumTask.tests.MailTest.checkDrafts" finished-at="2015-12-10T10:46:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.epam.seleniumTask.tests.DataLoader@41f69e84]]>
+                <![CDATA[com.epam.seleniumTask.tests.DataLoader@928763c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeMail -->
-        <test-method status="PASS" signature="exitTest(com.epam.seleniumTask.tests.DataLoader)[pri:0, instance:com.epam.seleniumTask.tests.mailTest@48140564]" name="exitTest" duration-ms="937" started-at="2015-12-04T12:42:58Z" data-provider="firstSet" depends-on-methods="com.epam.seleniumTask.tests.mailTest.writeMail" finished-at="2015-12-04T12:42:59Z">
+        <test-method status="PASS" signature="sendMail()[pri:0, instance:com.epam.seleniumTask.tests.MailTest@48140564]" name="sendMail" duration-ms="606" started-at="2015-12-10T10:46:29Z" depends-on-methods="com.epam.seleniumTask.tests.MailTest.writeMail" finished-at="2015-12-10T10:46:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMail -->
+        <test-method status="PASS" signature="exitTest(com.epam.seleniumTask.tests.DataLoader)[pri:0, instance:com.epam.seleniumTask.tests.MailTest@48140564]" name="exitTest" duration-ms="1443" started-at="2015-12-10T10:46:29Z" data-provider="firstSet" depends-on-methods="com.epam.seleniumTask.tests.MailTest.sendMail" finished-at="2015-12-10T10:46:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.epam.seleniumTask.tests.DataLoader@6c7a164b]]>
+                <![CDATA[com.epam.seleniumTask.tests.DataLoader@295cf707]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exitTest -->
-        <test-method status="PASS" signature="endWork()[pri:0, instance:com.epam.seleniumTask.tests.mailTest@48140564]" name="endWork" is-config="true" duration-ms="0" started-at="2015-12-04T12:42:59Z" finished-at="2015-12-04T12:42:59Z">
+        <test-method status="PASS" signature="endWork()[pri:0, instance:com.epam.seleniumTask.tests.MailTest@48140564]" name="endWork" is-config="true" duration-ms="0" started-at="2015-12-10T10:46:31Z" finished-at="2015-12-10T10:46:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endWork -->
-      </class> <!-- com.epam.seleniumTask.tests.mailTest -->
+      </class> <!-- com.epam.seleniumTask.tests.MailTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

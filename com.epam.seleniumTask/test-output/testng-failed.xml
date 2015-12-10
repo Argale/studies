@@ -3,15 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.epam.seleniumTask.tests.mailTest">
+      <class name="com.epam.seleniumTask.tests.MailTest">
         <methods>
-          <include name="endWork"/>
-          <include name="runBrovser"/>
+          <include name="exitTest"/>
           <include name="login"/>
           <include name="writeMail" invocation-numbers="0"/>
-          <include name="exitTest"/>
+          <include name="endWork"/>
+          <include name="runBrovser"/>
+          <include name="sendMail"/>
+          <include name="checkDrafts"/>
         </methods>
-      </class> <!-- com.epam.seleniumTask.tests.mailTest -->
+      </class> <!-- com.epam.seleniumTask.tests.MailTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
