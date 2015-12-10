@@ -55,8 +55,8 @@ public class MailTest {
 	}
 	@Test(dataProvider="firstSet")
 	public void login(DataLoader testData){
-		mainPage=loginPage.sendLogin(testData.getLogin()).sendPass(testData.getPassword()).submit();
-		Assert.assertTrue(loginPage.loginCheck());
+		mainPage=loginPage.sendLogin(testData.getLogin()).sendPass(testData.getPassword()).selectDomain().submit();
+		/*Assert.assertTrue(loginPage.loginCheck());*/
 	}
 	
 	@Test(dependsOnMethods="checkDrafts",dataProvider="firstSet")
@@ -71,11 +71,15 @@ public class MailTest {
 		senderForm.send();
 		Assert.assertTrue(senderForm.isSend());
 	}
-	@Test(dependsOnMethods="login",dataProvider="firstSet")
+	@Test(dependsOnMethods="deleteMailTest",dataProvider="firstSet")
 	public void checkDrafts(DataLoader testData){
 		draftsPage=mainPage.goToDrafts();
 		Assert.assertTrue(draftsPage.checkDrafts(testData));
 		}
+	@Test(dependsOnMethods="login")
+	public void deleteMailTest(){
+		mainPage.deleteMessage();
+	}
 	/*Exit button independent of page realization and exists on everyone*/
 	@Test(dependsOnMethods="sendMail",dataProvider="firstSet")
 	public void exitTest(DataLoader testData){
@@ -85,6 +89,6 @@ public class MailTest {
 	}
 	@AfterClass
 	public void endWork() {
-		driver.quit();
+		/*driver.quit();*/
 	}
 }

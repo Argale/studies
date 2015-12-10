@@ -32,7 +32,7 @@ public class DraftsPage {
 		for (WebElement webElement : subj) {
 			if(webElement.getText().contains(testData.getSubject()))subjCheck=true;
 		}
-		return true;
+		return recCheck & subjCheck;
 	}
 	public NewMailPage writeMail(){
 		new Actions(driver).click(newMailButton).build().perform();

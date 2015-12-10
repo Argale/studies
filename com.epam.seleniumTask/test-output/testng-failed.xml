@@ -5,13 +5,14 @@
     <classes>
       <class name="com.epam.seleniumTask.tests.MailTest">
         <methods>
+          <include name="deleteMailTest"/>
           <include name="exitTest"/>
           <include name="login"/>
-          <include name="writeMail" invocation-numbers="0"/>
+          <include name="writeMail"/>
           <include name="endWork"/>
           <include name="runBrovser"/>
           <include name="sendMail"/>
-          <include name="checkDrafts"/>
+          <include name="checkDrafts" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.epam.seleniumTask.tests.MailTest -->
     </classes>

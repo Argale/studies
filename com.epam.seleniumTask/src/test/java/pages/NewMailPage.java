@@ -1,6 +1,5 @@
 package pages;
 
-import java.sql.Driver;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
