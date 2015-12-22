@@ -1,7 +1,3 @@
-login=somehorrible
-password=111111aA
-main_Url=http://mail.ru
-domain=@mail.ru
 subject=second test
 body_Text=yep its second test
-recipient=secondsubject@mail.ru
+recipient=somehorrible@mail.ru

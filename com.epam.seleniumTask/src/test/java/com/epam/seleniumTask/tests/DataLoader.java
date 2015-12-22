@@ -28,18 +28,6 @@ public class DataLoader {
 				case BODY_TEXT:
 					bodyText = getFieldValue(loader);
 					break;
-				case DOMAIN:
-					domain = getFieldValue(loader);
-					break;
-				case LOGIN:
-					login = getFieldValue(loader);
-					break;
-				case MAIN_URL:
-					mainUrl = getFieldValue(loader);
-					break;
-				case PASSWORD:
-					password = getFieldValue(loader);
-					break;
 				case RECIPIENT:
 					recipient = getFieldValue(loader);
 					break;

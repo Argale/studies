@@ -1,6 +1,7 @@
 package pages;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,6 +27,8 @@ public class DraftsPage {
 	public 	Boolean checkDrafts(DataLoader testData){
 		boolean recCheck=false;
 		boolean subjCheck=false;
+		long timeout=3;
+		driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
 		for (WebElement webElement : recip) {
 			if(webElement.getText().contains(testData.getRecipient()))recCheck=true;
 		}

@@ -8,8 +8,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
-
 public class LoginPage {
 	private WebDriver driver;
 	@FindBy(id = "mailbox__login")
@@ -36,11 +34,11 @@ public class LoginPage {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
 	}
-	public LoginPage selectDomain(){
+	public LoginPage selectDomain(String domain){
 		int cashedIndex=0;
 		List< WebElement> options=driver.findElements(By.tagName("option"));
 		for (int i=0;i<options.size();i++) {
-			if(options.get(i).getText().contains("@mail.ru"))
+			if(options.get(i).getText().contains(domain))
 				cashedIndex=i;
 		}
 		new Actions(driver).click(options.get(cashedIndex)).build().perform();
@@ -59,5 +57,12 @@ public class LoginPage {
 	public MainPage submit() {
 		new Actions(driver).click(loginButton).perform();
 		return new MainPage(driver);
+	}
+	public boolean exitCheck() {
+		if (driver.findElement(By.id("mailbox__login")).isDisplayed()
+				&& driver.findElement(By.id("mailbox__password")).isDisplayed())
+			return true;
+		else
+			return false;
 	}
 }
