@@ -8,8 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
-public class MainPage {
-	private WebDriver driver;
+public class MainPage extends BasicMail{
 	@FindBy(xpath="//*[@id=\"b-nav_folders\"]/div/div[3]/a")
 	WebElement draftsButton;
 	@FindBy(className="b-toolbar__btn")

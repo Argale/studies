@@ -5,11 +5,9 @@
     <classes>
       <class name="com.epam.seleniumTask.tests.concrete.TaskTestSuite">
         <methods>
-          <include name="login"/>
           <include name="runBrovser"/>
-          <include name="writeDraft" invocation-numbers="0 1"/>
+          <include name="runSuite" invocation-numbers="0 1"/>
           <include name="endWork"/>
-          <include name="writeMail" invocation-numbers="1"/>
         </methods>
       </class> <!-- com.epam.seleniumTask.tests.concrete.TaskTestSuite -->
     </classes>

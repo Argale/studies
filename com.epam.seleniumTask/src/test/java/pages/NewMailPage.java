@@ -10,13 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 
-import com.epam.seleniumTask.tests.DataLoader;
-
-public class NewMailPage {
-	WebDriver driver;
+public class NewMailPage extends BasicMail{
 	@FindBy(name="Subject")
 	private WebElement subjectField;
 	@FindBy(tagName="body")
@@ -39,12 +34,12 @@ public class NewMailPage {
 		PageFactory.initElements(this.driver, this);
 	}
 
-	public NewMailPage fillMail(DataLoader testData){
-		new Actions(driver).click(subjectField).sendKeys(testData.getSubject()).build().perform();
-		new Actions(driver).click(toField).sendKeys(testData.getRecipient()).build().perform();
+	public NewMailPage fillMail(){
+		new Actions(driver).click(subjectField).sendKeys(inputContent.getSubject()).build().perform();
+		new Actions(driver).click(toField).sendKeys(inputContent.getRecipient()).build().perform();
 		List<WebElement> iframes = driver.findElements(By.tagName("iframe"));
 		driver.switchTo().frame(driver.findElements(By.tagName("iframe")).get(iframes.size() - 1));
-		driver.findElement(By.id("tinymce")).sendKeys(testData.getBodyText());
+		driver.findElement(By.id("tinymce")).sendKeys(inputContent.getMailBody());
 		driver.switchTo().defaultContent();
 		return this;
 	}

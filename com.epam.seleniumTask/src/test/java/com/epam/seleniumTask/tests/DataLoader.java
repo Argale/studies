@@ -34,6 +34,14 @@ public class DataLoader {
 				case SUBJECT:
 					subject = getFieldValue(loader);
 					break;
+				case DOMAIN:
+					domain=getFieldValue(loader);
+					break;
+				case LOGIN:
+					login=getFieldValue(loader);
+					break;
+				case PASSWORD:
+					password=getFieldValue(loader);
 				default:
 					break;
 				}

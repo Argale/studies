@@ -8,8 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-public class LoginPage {
-	private WebDriver driver;
+
+import businessObject.Account;
+public class LoginPage extends BasicMail{
+	private Account account;
 	@FindBy(id = "mailbox__login")
 	private WebElement loginField;
 	@FindBy(id = "mailbox__password")
@@ -28,29 +30,32 @@ public class LoginPage {
 			return false;
 		}
 	};
+	public void setAccount(Account account){
+		this.account=account;
+	}
 	
 	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
 	}
-	public LoginPage selectDomain(String domain){
+	public LoginPage selectDomain(){
 		int cashedIndex=0;
 		List< WebElement> options=driver.findElements(By.tagName("option"));
 		for (int i=0;i<options.size();i++) {
-			if(options.get(i).getText().contains(domain))
+			if(options.get(i).getText().contains(account.getDomain()))
 				cashedIndex=i;
 		}
 		new Actions(driver).click(options.get(cashedIndex)).build().perform();
 		return this;
 	}
-	public LoginPage sendLogin(String login) {
-		new Actions(driver).click(loginField).sendKeys(login).build().perform();
+	public LoginPage sendLogin() {
+		new Actions(driver).click(loginField).sendKeys(account.getLogin()).build().perform();
 		return this;
 	}
 
-	public LoginPage sendPass(String pass) {
-		new Actions(driver).click(passField).sendKeys(pass).build().perform();
+	public LoginPage sendPass() {
+		new Actions(driver).click(passField).sendKeys(account.getPassword()).build().perform();
 		return this;
 	}
 

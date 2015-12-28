@@ -9,10 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.epam.seleniumTask.tests.DataLoader;
-
-public class DraftsPage {
-	private WebDriver driver;
+public class DraftsPage extends BasicMail{
 	@FindBy(className="b-datalist__item__addr")
 	private List<WebElement> recip;
 	@FindBy(className="b-datalist__item__subj")
@@ -24,16 +21,16 @@ public class DraftsPage {
 		this.driver=driver;
 		PageFactory.initElements(this.driver, this);
 	}
-	public 	Boolean checkDrafts(DataLoader testData){
+	public 	Boolean checkDrafts(){
 		boolean recCheck=false;
 		boolean subjCheck=false;
 		long timeout=3;
 		driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
 		for (WebElement webElement : recip) {
-			if(webElement.getText().contains(testData.getRecipient()))recCheck=true;
+			if(webElement.getText().contains(inputContent.getRecipient()))recCheck=true;
 		}
 		for (WebElement webElement : subj) {
-			if(webElement.getText().contains(testData.getSubject()))subjCheck=true;
+			if(webElement.getText().contains(inputContent.getSubject()))subjCheck=true;
 		}
 		return recCheck & subjCheck;
 	}
