@@ -18,7 +18,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class Settings {
-	private static final String DRAFT_HREF = "https://e.mail.ru/messages/drafts/";
+	protected static final String DRAFT_HREF = "https://e.mail.ru/messages/drafts/";
 	protected WebDriver driver;
 	private String browserType = "firefox";
 	@FindBy(tagName="body")

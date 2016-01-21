@@ -2,28 +2,27 @@
 <testng-results skipped="0" failed="2" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="212959" started-at="2015-12-28T09:36:48Z" finished-at="2015-12-28T09:40:20Z">
+  <suite name="Default suite" duration-ms="2381" started-at="2016-01-11T08:50:56Z" finished-at="2016-01-11T08:50:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="212959" started-at="2015-12-28T09:36:48Z" finished-at="2015-12-28T09:40:20Z">
+    <test name="Default test" duration-ms="2381" started-at="2016-01-11T08:50:56Z" finished-at="2016-01-11T08:50:59Z">
       <class name="com.epam.seleniumTask.tests.concrete.TaskTestSuite">
-        <test-method status="PASS" signature="runBrovser()[pri:0, instance:com.epam.seleniumTask.tests.concrete.TaskTestSuite@57d5872c]" name="runBrovser" is-config="true" duration-ms="2559" started-at="2015-12-28T12:36:48Z" finished-at="2015-12-28T12:36:50Z">
+        <test-method status="PASS" signature="runBrovser()[pri:0, instance:com.epam.seleniumTask.tests.concrete.TaskTestSuite@49e4cb85]" name="runBrovser" is-config="true" duration-ms="2163" started-at="2016-01-11T11:50:56Z" finished-at="2016-01-11T11:50:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runBrovser -->
-        <test-method status="FAIL" signature="runSuite(com.epam.seleniumTask.tests.DataLoader)[pri:0, instance:com.epam.seleniumTask.tests.concrete.TaskTestSuite@57d5872c]" name="runSuite" duration-ms="206842" started-at="2015-12-28T12:36:50Z" data-provider="testData" finished-at="2015-12-28T12:40:17Z">
+        <test-method status="FAIL" signature="runSuite(com.epam.seleniumTask.tests.DataLoader)[pri:0, instance:com.epam.seleniumTask.tests.concrete.TaskTestSuite@49e4cb85]" name="runSuite" duration-ms="40" started-at="2016-01-11T11:50:58Z" data-provider="testData" finished-at="2016-01-11T11:50:58Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.epam.seleniumTask.tests.DataLoader@35d08e6c]]>
+                <![CDATA[com.epam.seleniumTask.tests.DataLoader@3cd3e762]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at com.epam.seleniumTask.tests.concrete.TaskTestSuite.simpleInitialization(TaskTestSuite.java:39)
-	at com.epam.seleniumTask.tests.concrete.TaskTestSuite.runSuite(TaskTestSuite.java:43)
+	at com.epam.seleniumTask.tests.concrete.TaskTestSuite.runSuite(TaskTestSuite.java:45)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -54,19 +53,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runSuite -->
-        <test-method status="FAIL" signature="runSuite(com.epam.seleniumTask.tests.DataLoader)[pri:0, instance:com.epam.seleniumTask.tests.concrete.TaskTestSuite@57d5872c]" name="runSuite" duration-ms="3192" started-at="2015-12-28T12:40:17Z" data-provider="testData" finished-at="2015-12-28T12:40:20Z">
+        <test-method status="FAIL" signature="runSuite(com.epam.seleniumTask.tests.DataLoader)[pri:0, instance:com.epam.seleniumTask.tests.concrete.TaskTestSuite@49e4cb85]" name="runSuite" duration-ms="19" started-at="2016-01-11T11:50:58Z" data-provider="testData" finished-at="2016-01-11T11:50:58Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.epam.seleniumTask.tests.DataLoader@5911e990]]>
+                <![CDATA[com.epam.seleniumTask.tests.DataLoader@5b94b04d]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at com.epam.seleniumTask.tests.concrete.TaskTestSuite.simpleInitialization(TaskTestSuite.java:39)
-	at com.epam.seleniumTask.tests.concrete.TaskTestSuite.runSuite(TaskTestSuite.java:43)
+	at com.epam.seleniumTask.tests.concrete.TaskTestSuite.runSuite(TaskTestSuite.java:45)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -97,7 +95,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runSuite -->
-        <test-method status="PASS" signature="endWork()[pri:0, instance:com.epam.seleniumTask.tests.concrete.TaskTestSuite@57d5872c]" name="endWork" is-config="true" duration-ms="342" started-at="2015-12-28T12:40:20Z" finished-at="2015-12-28T12:40:20Z">
+        <test-method status="PASS" signature="endWork()[pri:0, instance:com.epam.seleniumTask.tests.concrete.TaskTestSuite@49e4cb85]" name="endWork" is-config="true" duration-ms="146" started-at="2016-01-11T11:50:58Z" finished-at="2016-01-11T11:50:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endWork -->

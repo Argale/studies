@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="26.525677">
+<testcase classname="Google Test" name="Perform Search" time="24.751581">
+<failure message="java.lang.AssertionError: Element with locator Search Results Link not found, but should present!&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at com.epam.project.steps.GoogleStepDefs.i_see_element(GoogleStepDefs.java:51)&#13;&#10;&#9;at ✽.Then I see &quot;Search Results Link&quot;(GoogleTest.feature:11)&#13;&#10;"><![CDATA[Given I open "http://www.google.com/webhp?hl=en"............................passed
+Given I don't see "Search Results Link".....................................passed
+When I type "Test query" into "Search Field"................................passed
+And I click "Search Button".................................................passed
+Then I see "Search Results Link"............................................failed
+
+StackTrace:
+java.lang.AssertionError: Element with locator Search Results Link not found, but should present!
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at com.epam.project.steps.GoogleStepDefs.i_see_element(GoogleStepDefs.java:51)
+	at ✽.Then I see "Search Results Link"(GoogleTest.feature:11)
+]]></failure>
+</testcase>
+<testcase classname="Google test outline" name="Verify titles" time="0.454411">
+<system-out><![CDATA[When I open "http://www.google.com/webhp?hl=en".............................passed
+Then the page title must be "Google"........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Google test outline" name="Verify titles 2" time="0.493667">
+<system-out><![CDATA[When I open "http://www.bing.com"...........................................passed
+Then the page title must be "Bing"..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Google test outline" name="Verify titles 3" time="0.826018">
+<system-out><![CDATA[When I open "http://www.wikipedia.org"......................................passed
+Then the page title must be "Wikipedia".....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
